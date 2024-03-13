@@ -1,0 +1,180 @@
+/* .slider {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  
+  .controls {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    position: absolute;
+    top: 95%;
+    color: white;
+    left: 3%;
+    right: 0;
+    transform: translateY(-50%);
+    align-items: center;
+    z-index: 2;
+  }
+  
+  .squareButton {
+    padding: 7px;
+    width: 18px; 
+    font-size: 1em;
+    cursor: pointer;
+    background: transparent;
+    border: 0.5px solid white;
+    margin-left: 10px;
+  }
+  
+  .pageIndicator {
+    font-size: 1em;
+    margin-left: 10px;
+    margin-right: 10px; 
+  }
+
+  .imageContainer {
+    position: relative;
+  }
+  
+  .imageOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+  }
+
+  .continuousSlider {
+    overflow: hidden;
+    width: 100%;
+    margin-left: auto; 
+    margin-right: auto;
+  }
+  
+  .sliderContainer {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .sliderContainer img {
+    width: 100%;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+   */
+
+   .slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.5em;
+    position: relative; 
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+  }
+  
+  .text h4 {
+    font-size: 2rem; 
+    margin-bottom: 10px;
+  }
+  
+  .text p {
+    font-size: 0.8rem; 
+    margin-bottom: 20px;
+  }
+  
+  .start {
+    padding: 10px 20px; /* Adjust button padding */
+    font-size: 0.8rem; /* Decrease button size for mobile and tablet view */
+    background-color: #00a0e8;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 30px;
+  }
+  
+  .controls {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center align controls */
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0; /* Center controls horizontally */
+    color: white;
+    z-index: 2;
+    margin-top: 20px; /* Add margin top for better spacing */
+  }
+  
+  .squareButton {
+    padding: 7px;
+    width: 18px;
+    cursor: pointer;
+    background: transparent;
+    border: 0.5px solid white;
+    margin: 0 10px;
+  }
+  
+  .pageIndicator {
+    color: white;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .text {
+      padding: 0 20px;
+    }
+  
+    .start {
+      font-size: 0.7rem; /* Decrease button size for smaller screens */
+    }
+  }
+  

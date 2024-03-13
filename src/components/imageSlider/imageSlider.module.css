@@ -1,0 +1,46 @@
+/* imageSlider.module.css */
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .sliderContainer {
+    overflow: hidden;
+    width: calc(100% - 40px); /* Adjust as needed */
+    margin: 0 auto;
+  }
+  
+  .sliderTrack {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .slide {
+    flex: 0 0 auto;
+    width: calc(100% / 3); /* Ensure 3 images are visible at once */
+  }
+  
+  .slide img {
+    max-width: 120px;
+    height: 120px;
+    margin: 0 auto;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .slide {
+        width: calc(100% / 2); /* Display two images per row on tablets */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sliderTrack {
+        transform: translateX(calc(-100% + (100% / 2))); /* Move the track to show the second image */
+    }
+    
+    .slide {
+        width: calc(100% / 2); /* Display two images per row */
+    }
+}

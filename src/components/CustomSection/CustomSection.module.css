@@ -1,0 +1,124 @@
+.customContainer {
+    margin: auto;
+    max-width: 1140px;
+  }
+  
+  .customContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 60px 24px; 
+    border: 10px black ;
+  }
+  .customList {
+    margin-bottom: 20px; 
+  }
+  
+  .customList li {
+    margin-bottom: 5px;
+    margin-left: 30px;
+    font-size: 15px;
+  }
+  .customList li::marker {
+    color: #ff0000; 
+  }
+  .customTextHeading {
+    color: #2d2d31;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 18px;
+  }
+  
+  .customTextCopy {
+    color: #2d2e31;
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+  .customTextCopy2 {
+    color: #2d2e31;
+    font-size: 19px;
+    line-height: 33px;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .customTextButton {
+    background: #252528;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    width: fit-content;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  .customTextButton:hover,
+  .customTextButton:active,
+  .customTextButton:focus {
+    background: #32343a;
+    outline: 2px solid #425ccd;
+  }
+  
+  .customMediaImage {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .customText {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .customMedia {
+    display: flex;
+    justify-content: center;
+  }
+  
+  @media only screen and (max-width: 950px) {
+    .customContent {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0px;
+      padding: 0px;
+    }
+    .customText {
+      padding: 60px;
+      margin: auto;
+      width: 90%;
+      text-align: center;
+      grid-row: 2;
+    }
+    .customTextHeading {
+      text-align: center;
+    }
+    .customTextButton {
+      display: flex;
+      margin: auto;
+    }
+  }
+  
+  @media screen and (max-width: 568px) {
+    .customText {
+      padding: 60px 20px;
+    }
+    .customTextHeading {
+      font-size: 25px;
+    }
+    .customTextCopy,
+    .customTextButton {
+      font-size: 16px;
+    }
+    .customList{
+        text-align: left;
+      } 
+  }
+  

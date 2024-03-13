@@ -1,0 +1,175 @@
+/* OurServices.module.css */
+
+.servicesSection {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.mediumHeading {
+    font-size: 24px;
+    color: #00a0e8;
+}
+
+.largeHeading {
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+.button {
+    background-color: #00a0e8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #7141B1;
+}
+
+.cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center cards on all screen sizes */
+    margin-top: 40px;
+    margin-left: -20px; /* Compensate for the default margin of the first card */
+    margin-right: -20px; /* Compensate for the default margin of the last card */
+}
+
+.card {
+    flex: 0 0 calc(33.33% - 40px); /* Adjust card width for mobile and tablet views */
+    max-width: calc(33.33% - 40px); /* Limit maximum width for larger screens */
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+    font-size: 70px;
+    color: #7141B1;
+    margin-bottom: 20px;
+    transition: color 0.7s;
+    cursor: pointer;
+}
+
+.icon:hover {
+    color: #00a0e8;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 16px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.description ul {
+    text-align: left;
+    list-style-type: none;
+}
+
+.description li {
+    margin-bottom: 8px; 
+}
+
+@media screen and (max-width: 768px) {
+    .cardsContainer {
+        margin-left: -10px; /* Adjust margin for smaller screens */
+        margin-right: -10px; /* Adjust margin for smaller screens */
+    }
+    .card {
+        flex: 0 0 calc(70% - 20px); /* Adjust card width for smaller screens */
+        max-width: calc(70% - 20px); /* Limit maximum width for larger screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        flex: 0 0 calc(100% - 20px); /* Adjust card width for mobile screens */
+        max-width: calc(100% - 20px); /* Limit maximum width for larger screens */
+    }
+}
+
+.contactSection {
+    position: relative;
+    background-image: url('/service.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px; /* Adjust padding as needed */
+    text-align: center;
+    color: #fff; /* Text color */
+    margin-bottom: 50px;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  
+  /* Add overlay to create a semi-transparent layer over the background image */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust transparency as needed */
+  }
+  
+  /* Add styles for content within the section */
+  .content {
+    position: relative;
+    z-index: 1; /* Ensure content appears above the overlay */
+  }
+  
+  .smallHeading {
+    font-size: 24px;
+  }
+  
+  .bigHeading {
+    font-size: 76px;
+    font-weight: bold; /* Make the text bold */
+  }
+  
+  .Text {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  
+  .button {
+    margin-top: 30px; /* Adjust margin as needed */
+    padding: 10px 20px;
+    background-color: #00a0e8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  /* Media queries for responsive design */
+  @media screen and (max-width: 768px) {
+    .contactSection {
+      padding: 80px 20px; /* Adjust padding for smaller screens */
+    }
+    .bigHeading {
+        font-size: 25px; /* Decrease font size for smaller screens */
+      }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .contactSection {
+      padding: 60px 20px; /* Further adjust padding for smaller screens */
+    }
+    .bigHeading {
+      font-size: 20px; /* Decrease font size for smaller screens */
+    }
+  }
+  

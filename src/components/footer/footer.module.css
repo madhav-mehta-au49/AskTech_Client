@@ -1,0 +1,154 @@
+/* .container{
+    margin-top: 50px;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--softTextColor);
+}
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+.info{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.links{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 100px;
+}
+.image{
+    border-radius: 50%;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 300;
+}
+.listTitle{
+    font-weight: bold;
+}
+
+@media screen and (max-width:1024px) {
+    .links{
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .links{
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+@media screen and (max-width:640px) {
+    .links{
+       font-size: 14px;
+    }
+} */
+
+.footer {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #16171f;
+  }
+  
+  .sec-1,
+  .sec-2,
+  .sec-3,
+  .sec-4 {
+    flex: 1; 
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .sec-head {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px; 
+  }
+  
+  .sec-link {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    margin-top: 10px;
+
+  }
+  
+  .sec-link a {
+    line-height: 2;
+    text-decoration: none;
+    color: rgb(163, 162, 162);
+  }
+  
+  .sec-link a:hover {
+    color: white;
+    transition-duration: 0.75s;
+  }
+  
+  .footer_2 {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    background-color: #0b0b0f;
+    font-weight: 500;
+    color: white;
+  }
+  
+  .footer_2 img {
+    width: 70px;
+    height: auto; 
+    margin-top: -3px;
+  }
+  .footer_2 span { 
+    margin-top: 15px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .sec-1,
+    .sec-2,
+    .sec-3,
+    .sec-4 {
+      flex: 1 100%; 
+      margin: 0;
+    }
+  
+    .sec-head,
+    .sec-link,
+    .sec-link a {
+      margin-top: 5px; 
+    }
+  
+    .footer_2 {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .footer_2 img {
+      width: 70px;
+      height: auto; 
+      margin-top: -2px;
+      margin: auto;
+      margin-bottom: 15px;
+    }
+
+    .footer_2 span{
+      margin: auto;
+      line-height: 30px;
+    }
+  }

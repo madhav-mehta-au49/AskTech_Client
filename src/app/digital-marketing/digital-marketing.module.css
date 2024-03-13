@@ -1,0 +1,241 @@
+.container {
+  text-align: center;
+}
+
+.row {
+  padding-top: 50px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap */
+  justify-content: center; /* Center items horizontally */
+}
+
+.box {
+  width: calc(33.33% - 40px); /* Set width for desktop */
+  max-width: 410px; /* Set max-width for larger screens */
+  height: auto; /* Allow height to adjust based on content */
+  background: #fff;
+  border-radius: 20px;
+  margin: 0 20px 30px; /* Add margin to space out boxes */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box img {
+  width: 250px; /* Make image responsive */
+  height: 250px; /* Make image responsive */
+}
+
+.container h1 {
+  color: #2e937a;
+  font-size: 45px;
+  margin-top: 50px;
+}
+
+.container h2 {
+  color: #2e937a;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.box h3 {
+  font-size: 18px;
+  padding-top: 20px;
+  color: #2e937a;
+  padding: 0 10px; /* Add padding to adjust text */
+}
+
+.box p {
+  color: #4e746b;
+  line-height: 25px;
+  font-size: 15px;
+  text-align: justify;
+  padding: 10px 10px; /* Add padding to adjust text */
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1199px) {
+  .box {
+      width: calc(50% - 20px); /* Set width for tablet */
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .box {
+      width: calc(100% - 40px); /* Set width for mobile */
+      margin: 0 20px 30px; /* Adjust margin for mobile */
+  }
+  .box p{
+    text-align: justify;
+    padding: 20px;
+  }
+  
+}
+
+
+.customContainer {
+    margin: auto;
+    max-width: 1140px;
+  }
+  
+  .customContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 60px 24px;
+  }
+  .customList {
+    margin-bottom: 20px; 
+  }
+  
+  .customList li {
+    margin-bottom: 5px;
+    margin-left: 30px;
+    font-size: 15px;
+  }
+  .customList li::marker {
+    color: #ff0000; 
+  }
+  .customTextHeading {
+    color: #2d2d31;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 18px;
+  }
+  
+  .customTextCopy {
+    color: #2d2e31;
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+  .customTextCopy2 {
+    color: #2d2e31;
+    font-size: 19px;
+    line-height: 33px;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .customTextButton {
+    background: #252528;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    width: fit-content;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+ 
+  .customMediaImage {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .customText {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .customMedia {
+    display: flex;
+    justify-content: center;
+  }
+  
+  @media only screen and (max-width: 950px) {
+    .customContent {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0px;
+      padding: 0px;
+    }
+    .customText {
+      padding: 60px;
+      margin: auto;
+      width: 90%;
+      text-align: center;
+      grid-row: 2;
+    }
+    .customTextHeading {
+      text-align: center;
+    }
+    .customTextCopy {
+      font-size: 16px;
+      text-align: justify;
+    }
+  }
+  
+  @media screen and (max-width: 568px) {
+    .customText {
+      padding: 60px 20px;
+    }
+    .customTextHeading {
+      font-size: 25px;
+    }
+    .customTextCopy {
+      font-size: 16px;
+      text-align: justify;
+    }
+    .customList{
+        text-align: left;
+      } 
+  }
+  .DigitalContainer {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .sectionHeading {
+    font-size: 34px; 
+    color: #333;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .heading {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .paragraph {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  @media only screen and (max-width: 950px) {
+    .paragraph{
+      text-align: justify;
+    }
+    .sectionHeading{
+      font-size: 30px;
+      text-align: center;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+  @media only screen and (max-width: 568px) {
+    .paragraph{
+      text-align: justify;
+    }
+    .sectionHeading{
+      font-size: 25px;
+      text-align: center;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }

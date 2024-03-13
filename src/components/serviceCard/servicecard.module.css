@@ -1,0 +1,58 @@
+.card {
+    flex: 0 0 calc(30% - 20px); /* Adjust card width for larger screens */
+    max-width: calc(30% - 20px); /* Limit maximum width for larger screens */
+    margin: 20px; /* Set margin for cards */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .icon {
+    font-size: 70px;
+    color: #7141B1;
+    margin-bottom: 20px;
+    transition: color 0.7s;
+    cursor: pointer;
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    font-size: 16px;
+    text-align: left;
+    margin-left: 20px;
+  }
+  
+  .description ul {
+    text-align: left;
+    list-style-type: none;
+  }
+  
+  .description li {
+    margin-bottom: 8px; 
+  }
+  
+  @media screen and (max-width: 768px) {
+    .cardsContainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .card {
+        flex: 0 0 calc(100% - 20px); /* Adjust card width for mobile screens */
+        max-width: calc(100% - 20px); /* Limit maximum width for mobile screens */
+      }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .card {
+      flex: 0 0 calc(100% - 20px); /* Adjust card width for mobile screens */
+      max-width: calc(100% - 20px); /* Limit maximum width for mobile screens */
+    }
+  }
+  
