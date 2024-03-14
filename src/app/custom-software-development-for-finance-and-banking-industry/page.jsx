@@ -50,7 +50,7 @@ const CustomSoftwareDevelopmentFinanceBankingIndustry = () => {
             The way we interact with and manage our accounts is entirely changing as a result of advances in financial technology. Given the complex and constantly changing global regulatory environments to comply with and the utmost importance of data and application security, choosing the right software development partner who keeps up with the latest technological advancements within the framework of compliance and application security is crucial for business success.
             </p>
             <p className={styles.customTextCopy}>Due to their many differences, FinTech software solutions require a strong, scalable, secure design, stringent data protection, high speed, low latency solutions, and a wide range of third-party integrations.</p>
-            <p className={styles.customTextCopy}>Due to AskTech's years of experience, sophisticated FinTech applications are developed, updated, and supported in a way that makes them quick, dependable, secure, and scalable. Our skilled software development, cloud, QA, and DevOps teams easily integrate with our deep subject expertise.</p>
+            <p className={styles.customTextCopy}>Due to AskTech&apos;s years of experience, sophisticated FinTech applications are developed, updated, and supported in a way that makes them quick, dependable, secure, and scalable. Our skilled software development, cloud, QA, and DevOps teams easily integrate with our deep subject expertise.</p>
             </div>
           </div>
           <div className={styles.customContent}>

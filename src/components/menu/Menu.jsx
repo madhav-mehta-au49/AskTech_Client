@@ -6,7 +6,7 @@ import MenuCategories from "../menuCategories/MenuCategories";
 function Menu() {
   return (
     <div className={styles.container}>
-      <h2 className={styles.subtitle}>Whaw's hot</h2>
+      <h2 className={styles.subtitle}>What&lsquo;s hot</h2>
       <h1 className={styles.title}>Most Popular</h1>
       <MenuPost withImage={false}/>
 

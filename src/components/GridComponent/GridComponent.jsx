@@ -4,7 +4,7 @@ const GridComponent = () => {
   return (
     <div className={styles.demo}>
     
-    <h2 className={styles.heading}>Asktech's Digital Marketing Services</h2>
+    <h2 className={styles.heading}>Asktech&apos;s Digital Marketing Services</h2>
       <p className={styles.paragraph}>Increase profitability while establishing your brand as a leader in your industry.</p>
     <div className={styles.mainCard}>
       <div className={styles.mainCardHeader}></div>
